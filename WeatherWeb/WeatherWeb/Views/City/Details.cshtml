@@ -1,0 +1,38 @@
+﻿@model WeatherWeb.ViewModels.CityViewModel;
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>More information about the weather</h4>
+    
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+         <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Weather.Temperature )
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Weather.Temperature ) °C
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Weather.Pressure)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Weather.Pressure) hPa
+        </dd> 
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Weather.Wind)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Weather.Wind) km/h
+        </dd>
+    </dl>
+</div>
+
